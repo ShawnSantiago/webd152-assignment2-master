@@ -18,36 +18,53 @@ body {
 }
 
 h1 {
-	font-family: 'Krona One',Futura, "Trebuchet MS", Arial, sans-serif;
+	font-family: Krona One, sans-serif;	
 	font-size: 36px;
-	text-transform: uppercase;
 }
 
 h2 {
-	font-family: 'Krona One',Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 32px;
-	text-transform:  uppercase;
+	font-family: Krona One, sans-serif;	
+	font-size: 24px;
+}
+
+h3 {
+	font-family: Krona One, sans-serif;	
+	font-size: 18px;
 }
 
 p {
-	font-family: 'Duru Sans',Futura, "Trebuchet MS", Arial, sans-serif;
-	line-height: 24px;
+	font-family: Duru Sans, sans-serif;
+	font-size: 18px;
 }
+
+q {
+	font-family: Krona One;
+}
+header {
+	position: absolute;
+	width: 1280px;
+	height: 141px;
+	background-color: rgba(0,0,0,0.3);
+	
+}
+
+#headerBlock {
+	top: 0px;
+	opacity: 0.3;
+	background-color: black;
+	position: relative;
+	width: 100%;
+	height: 142px;
+
+}
+
 .container {
 	width: 1280px;
 	margin: 0 auto;
 
 }
 
-#headerBlock {
-	margin-top: 0px;
-	z-index: -1;
-	opacity: 0.3;
-	background-color: black;
-	position: relative;
-	width: 100%;
-	height: 142px;
-}
+
 /*Logo*/
 #outerlogo {
 	z-index: 1;
@@ -151,7 +168,7 @@ p {
 #textlogo{
 	position: relative;
 	z-index: 4;	
-	top: 0px;
+	top: -22px;
 	left:6px;
 
 }
@@ -171,7 +188,7 @@ p {
 .wrapper {
     position:relative;
     left:110px;
-    top: 0px;
+    top: -22px;
 }
 .arc1 {
     position:absolute;
@@ -295,14 +312,6 @@ border-radius: 15px;
 }
 
 /* NavBar */
-header {
-	width: 100%;
-	z-index: -1;
-	opacity: 0.3;
-	background-color: black;
-	height: 141px;
-	
-}
 
 nav {
 	width: 100%;
@@ -311,11 +320,13 @@ nav {
 }
 
 ul#topNav {
+	padding-top: 31.5px;
 	float: right;
 	font-family: 'Krona One', Arial, sans-serif;
 }
 
 ul#topNav li {
+
 	padding-left: 50px;
 	display: inline;
 }
@@ -334,12 +345,177 @@ ul#topNav li:last-child {
 	padding-right: 150px;
 }
 
-/* About Section one*/
+/* About Section One*/
 
-section#about {
+section#header {
 	background-image: url('../images/backgroundSec1.png');
 	width: 100%;
 	height: 721px;
 
 }
 
+section#header img{ 
+	top:185px;
+	left: 193px;
+	float: left;
+	position: relative;
+}
+
+section#header h3{ 
+	top: 382px;
+	left: 270px;
+	float: left;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	
+}
+
+/*Menu Section Two*/
+
+section#about {
+	height: 753px;
+
+}
+
+section#about h1 {
+	width: 100%;
+	text-transform: uppercase;
+	color: #5dcdb5;
+	padding-left: 520px;
+	padding-top:100px;
+	position: relative;
+	float: left;
+	margin:0;
+}
+
+section#about #textWrapper {
+	width: 675px;
+	height: 355px;
+	display: block;
+	margin-top: 25px;
+	margin-left: 100px;
+	position: relative;
+	float: left;
+}
+
+section#about #textWrapper p:first-child {
+	margin-top: 0;
+}
+
+section#about #textWrapper p:last-child {
+	font-size: 18px;
+	font-family: 
+}
+
+section#about #textWrapper q {
+	font-size: 24px;
+}
+
+section#about img {
+	float: right;
+	right: 100px;
+	position: relative;
+	top: 25px;
+	height: 500px;
+	width: 393px;
+}
+
+/*Menu Section Three*/
+
+section#menu {
+	background-image: url('../images/menuBackground.png');
+
+	width: 100%;
+	height:470px;
+}
+
+section#menu h1 {
+	width: 100%;
+	text-transform: uppercase;
+	color: #f95971;
+	padding-left: 575px;
+	padding-top:80px;
+	position: relative;
+	float: left;
+	margin:0;
+}
+
+section#menu p {
+	text-align: center;
+	margin: 10px 0;
+}
+section#menu h2 {
+	
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0px 130px;
+	float: left;
+	
+}
+
+section#menu #mains {
+	height: 310px;
+	width:360px;
+	margin-left: 100px;
+	margin-top: 25px;
+	
+	float: left;
+
+}
+
+section#menu #sides {
+	height: 310px;
+	width:360px;
+	margin-top: 25px;
+	
+	float: left;
+}
+section#menu #drinks {
+	height: 310px;
+	width:360px;
+	margin-top: 25px;
+	float: left;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #252525;
+	height: 280px;
+	width: 100%;
+}
+
+footer #findUs {
+	width: 720px;
+	position: relative;
+	float:left;
+	
+}
+
+footer #findUs h2 {
+	padding: 50px 0px 0px 100px;
+	margin: 0;
+	text-transform:uppercase;
+	color: #fff;
+}
+
+footer #findUs p {
+	padding: 0px 0px 0px 100px;
+	margin: 0;
+	color: #fff;
+
+}
+
+footer #copy {
+	width:360px;
+	padding-top: 50px;
+	margin: 0;
+	margin-right: 100px;
+	float: right;
+}
+
+footer #copy p {
+	color: #fff;
+	margin: 0;
+}
